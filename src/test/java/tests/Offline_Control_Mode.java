@@ -108,7 +108,7 @@ public void CreationSite() {
 
 	        String video =driver.stopRecordingScreen();
 	        byte[] decode = Base64.getDecoder().decode(video);
-	        FileUtils.writeByteArrayToFile(new File("androidclip.mp4"), decode);
+	        FileUtils.writeByteArrayToFile(new File("video/androidclip.mp4"), decode);
 	        driver.quit();
 				
 	        driver.quit();
