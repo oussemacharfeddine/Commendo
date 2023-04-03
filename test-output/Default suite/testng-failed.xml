@@ -5,11 +5,10 @@
     <classes>
       <class name="tests.Offline_Control_Mode">
         <methods>
-          <include name="editArea"/>
           <include name="login"/>
           <include name="tearDown"/>
-          <include name="Creation_Area"/>
           <include name="setup"/>
+          <include name="Creation_Area"/>
           <include name="CreationSite"/>
         </methods>
       </class> <!-- tests.Offline_Control_Mode -->

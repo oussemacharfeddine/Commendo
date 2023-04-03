@@ -1,6 +1,7 @@
 package tests;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -16,11 +17,23 @@ import io.appium.java_client.android.AndroidStartScreenRecordingOptions;
 
 import java.util.Base64;
 
+
+
 public class Offline_Control_Mode extends Offline_Authentification{
 	
+
 	
 @Test
 public void CreationSite() {
+	 driver.startRecordingScreen(new AndroidStartScreenRecordingOptions()
+             .withVideoSize("1280x720")
+             .withTimeLimit(Duration.ofSeconds(100)));
+	
+	
+	        
+	    
+	
+	
 	WebElement a = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.Button[1]"));
 	a.click();
 	
@@ -47,6 +60,11 @@ public void CreationSite() {
 	 }
 	 @Test
 	public void Creation_Area() throws InterruptedException {
+		 
+
+	        driver.startRecordingScreen(new AndroidStartScreenRecordingOptions()
+	                .withVideoSize("1280x720")
+	                .withTimeLimit(Duration.ofSeconds(7)));
   
     Thread.sleep(2000);	
     WebElement w = driver.findElement(By.xpath( "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.View"));
@@ -69,43 +87,7 @@ public void CreationSite() {
     WebElement t= driver.findElement(By.xpath("//android.widget.FrameLayout[@content-desc=\"Area\"]/android.widget.ImageView"));
     t.click();
 	 }
-    @Test
-    public void editArea() {
-    	
-
-        driver.startRecordingScreen(new AndroidStartScreenRecordingOptions()
-                .withVideoSize("1280x720")
-                .withTimeLimit(Duration.ofSeconds(7)));
-        
-        WebElement bb= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView"));
-        bb.click();
-        
-
-        WebElement nn= driver.findElement(By.id("com.sofia.commendo:id/edit_room"));
-        nn.click();
-
-        WebElement rr= driver.findElement(By.id("com.sofia.commendo:id/add_photo_house"));
-        rr.click();
-
-        WebElement tt= driver.findElement(By.id("com.sofia.commendo:id/imageView2"));
-        tt.click();
-        
-
-        WebElement rp= driver.findElement(By.id("com.android.permissioncontroller:id/permission_allow_foreground_only_button"));
-        rp.click();
-        
-        driver.switchTo().alert().accept();
-        
-
-        
-
-
-        WebElement kk= driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"IMG_20230403_053730.jpg, 145 kB, 5:37 AM\"]/android.widget.RelativeLayout/android.widget.FrameLayout[2]"));
-        kk.click();
-        
-        WebElement mm= driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"IMG_20230403_053730.jpg, 145 kB, 5:37 AM\"]/android.widget.RelativeLayout/android.widget.FrameLayout[2]"));
-        mm.click();
-        		
+   
         
         
         
@@ -118,27 +100,22 @@ public void CreationSite() {
     
    	
      
-	 }
+	 
 	 
 	 @AfterTest
-	 public void tearDown()
+	 public void tearDown() throws IOException
 	 {
 
 	        String video =driver.stopRecordingScreen();
 	        byte[] decode = Base64.getDecoder().decode(video);
-	        try {
-				FileUtils.writeByteArrayToFile(new File("androidclip.mp4"), decode);
-				String
-				destinationPath="target/filename.mp4";
-				Path path = Paths.get(destinationPath);
-				
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+	        FileUtils.writeByteArrayToFile(new File("androidclip.mp4"), decode);
 	        driver.quit();
+				
+	        driver.quit();
+			}
+	      
 	 }
 
-}
+
 
 
