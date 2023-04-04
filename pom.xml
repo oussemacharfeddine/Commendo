@@ -19,7 +19,8 @@
     <maven.compiler.source>14</maven.compiler.source>
     <maven.compiler.target>14</maven.compiler.target>
     <!-- Don't start your own properties properties with project. -->
-    
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
   
 <dependencies>  <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
