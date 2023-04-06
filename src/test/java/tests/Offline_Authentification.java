@@ -26,9 +26,9 @@ public class Offline_Authentification {
         DesiredCapabilities caps = new DesiredCapabilities();
         //caps.setCapability("platformName", "ANDROID");
         caps.setCapability(CapabilityType.PLATFORM_NAME, "ANDROID");
-        caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11.0");
-        caps.setCapability(MobileCapabilityType.DEVICE_NAME, "sdk_gphone_x86");
-        caps.setCapability(MobileCapabilityType.UDID, "emulator-5554");
+        caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "13");
+        caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Galaxy J4+,");
+        caps.setCapability(MobileCapabilityType.UDID, "6822c6a4");
         caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
         caps.setCapability(MobileCapabilityType.APP, "C:\\Users\\hoove\\AppData\\Local\\Android\\Sdk\\platform-tools\\Commendo_APK_.apk");
         try {

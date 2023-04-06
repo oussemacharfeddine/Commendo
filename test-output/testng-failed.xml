@@ -5,10 +5,9 @@
     <classes>
       <class name="tests.Offline_Control_Mode">
         <methods>
+          <include name="add_Device"/>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="Creation_Area"/>
-          <include name="CreationSite"/>
         </methods>
       </class> <!-- tests.Offline_Control_Mode -->
     </classes>
