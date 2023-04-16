@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\hoove\AppData\Local\Temp\testng-eclipse-497569972\testng-customsuite.xml</span>
+                    <span>C:\Users\hoove\AppData\Local\Temp\testng-eclipse-1696865677\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -113,12 +113,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.Offline_Control_Mode" class="method navigator-link" hash-for-method="add_Device">add_Device</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="tests.Offline_Control_Mode" class="method navigator-link" hash-for-method="editArea">editArea</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="tests.Offline_Control_Mode" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="tests.Offline_Control_Mode" class="method navigator-link" hash-for-method="secondArea">secondArea</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -155,9 +160,9 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="add_Device">
-                  </a> <!-- add_Device -->
-                  <span class="method-name">add_Device</span>
+                  <a name="editArea">
+                  </a> <!-- editArea -->
+                  <span class="method-name">editArea</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -167,12 +172,19 @@
                   <span class="method-name">login</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="secondArea">
+                  </a> <!-- secondArea -->
+                  <span class="method-name">secondArea</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\hoove\AppData\Local\Temp\testng-eclipse-497569972\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\hoove\AppData\Local\Temp\testng-eclipse-1696865677\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -221,28 +233,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'add_Device')
+data.setCell(0, 1, 'login')
 data.setCell(0, 2, 'tests.Offline_Control_Mode')
-data.setCell(0, 3, 77925);
+data.setCell(0, 3, 24468);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'login')
+data.setCell(1, 1, 'Creation_Area')
 data.setCell(1, 2, 'tests.Offline_Control_Mode')
-data.setCell(1, 3, 25043);
+data.setCell(1, 3, 7158);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Creation_Area')
+data.setCell(2, 1, 'CreationSite')
 data.setCell(2, 2, 'tests.Offline_Control_Mode')
-data.setCell(2, 3, 10152);
+data.setCell(2, 3, 6273);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'CreationSite')
+data.setCell(3, 1, 'secondArea')
 data.setCell(3, 2, 'tests.Offline_Control_Mode')
-data.setCell(3, 3, 7392);
+data.setCell(3, 3, 6191);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'editArea')
+data.setCell(4, 2, 'tests.Offline_Control_Mode')
+data.setCell(4, 3, 2078);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 46 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -269,30 +285,42 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">tests.Offline_Control_Mode</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">reportSetup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">736 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">22085 ms</span>
+                <span class="method-start">18920 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CreationSite</span>
-                <span class="method-start">47131 ms</span>
+                <span class="method-start">43406 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Creation_Area</span>
-                <span class="method-start">54525 ms</span>
+                <span class="method-start">49681 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">add_Device</span>
-                <span class="method-start">64680 ms</span>
+                <span class="method-name">editArea</span>
+                <span class="method-start">56844 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">secondArea</span>
+                <span class="method-start">58924 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">142609 ms</span>
+                <span class="method-start">65119 ms</span>
               </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">reportTearDown</span>
+                <span class="method-start">66397 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

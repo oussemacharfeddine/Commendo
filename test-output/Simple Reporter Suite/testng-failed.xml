@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Simple Reporter Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="tests.TestReporterClass"/>
+  </listeners>
+  <test thread-count="5" name="Simple Reporter test(failed)">
+    <classes>
+      <class name="tests.Offline_Control_Mode">
+        <methods>
+          <include name="add_Device"/>
+          <include name="login"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="Creation_Area"/>
+          <include name="CreationSite"/>
+        </methods>
+      </class> <!-- tests.Offline_Control_Mode -->
+    </classes>
+  </test> <!-- Simple Reporter test(failed) -->
+</suite> <!-- Failed suite [Simple Reporter Suite] -->
