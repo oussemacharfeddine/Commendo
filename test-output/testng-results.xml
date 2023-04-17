@@ -1,45 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-16T09:12:19 CET" name="Default suite" finished-at="2023-04-16T09:13:25 CET" duration-ms="65544">
+  <suite started-at="2023-04-17T02:41:57 CET" name="Default suite" finished-at="2023-04-17T02:43:26 CET" duration-ms="89415">
     <groups>
     </groups>
-    <test started-at="2023-04-16T09:12:19 CET" name="Default test" finished-at="2023-04-16T09:13:25 CET" duration-ms="65544">
+    <test started-at="2023-04-17T02:41:57 CET" name="Default test" finished-at="2023-04-17T02:43:26 CET" duration-ms="89415">
       <class name="tests.Offline_Control_Mode">
-        <test-method is-config="true" signature="reportSetup()[pri:0, instance:tests.Offline_Control_Mode@790174f2]" started-at="2023-04-16T09:12:18 CET" name="reportSetup" finished-at="2023-04-16T09:12:19 CET" duration-ms="724" status="PASS">
+        <test-method is-config="true" signature="reportSetup()[pri:0, instance:tests.Offline_Control_Mode@1a2e2935]" started-at="2023-04-17T02:41:56 CET" name="reportSetup" finished-at="2023-04-17T02:41:57 CET" duration-ms="861" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportSetup -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.Offline_Control_Mode@790174f2]" started-at="2023-04-16T09:12:19 CET" name="setup" finished-at="2023-04-16T09:12:37 CET" duration-ms="18109" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.Offline_Control_Mode@1a2e2935]" started-at="2023-04-17T02:41:57 CET" name="setup" finished-at="2023-04-17T02:42:29 CET" duration-ms="32286" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:0, instance:tests.Offline_Control_Mode@790174f2]" started-at="2023-04-16T09:12:37 CET" name="login" finished-at="2023-04-16T09:13:02 CET" duration-ms="24468" status="PASS">
+        <test-method signature="login()[pri:0, instance:tests.Offline_Control_Mode@1a2e2935]" started-at="2023-04-17T02:42:29 CET" name="login" finished-at="2023-04-17T02:42:57 CET" duration-ms="27803" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="CreationSite()[pri:0, instance:tests.Offline_Control_Mode@790174f2]" started-at="2023-04-16T09:13:02 CET" name="CreationSite" finished-at="2023-04-16T09:13:08 CET" duration-ms="6273" status="PASS">
+        <test-method signature="CreationSite()[pri:0, instance:tests.Offline_Control_Mode@1a2e2935]" started-at="2023-04-17T02:42:57 CET" name="CreationSite" finished-at="2023-04-17T02:43:02 CET" duration-ms="5276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreationSite -->
-        <test-method signature="Creation_Area()[pri:0, instance:tests.Offline_Control_Mode@790174f2]" started-at="2023-04-16T09:13:08 CET" name="Creation_Area" finished-at="2023-04-16T09:13:15 CET" duration-ms="7158" status="PASS">
+        <test-method signature="Creation_Another_Site()[pri:0, instance:tests.Offline_Control_Mode@1a2e2935]" started-at="2023-04-17T02:43:02 CET" name="Creation_Another_Site" finished-at="2023-04-17T02:43:02 CET" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Creation_Another_Site -->
+        <test-method signature="Creation_Area()[pri:0, instance:tests.Offline_Control_Mode@1a2e2935]" started-at="2023-04-17T02:43:02 CET" name="Creation_Area" finished-at="2023-04-17T02:43:09 CET" duration-ms="6642" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Creation_Area -->
-        <test-method signature="editArea()[pri:0, instance:tests.Offline_Control_Mode@790174f2]" started-at="2023-04-16T09:13:15 CET" name="editArea" finished-at="2023-04-16T09:13:17 CET" duration-ms="2078" status="PASS">
+        <test-method signature="Delete_Area()[pri:0, instance:tests.Offline_Control_Mode@1a2e2935]" started-at="2023-04-17T02:43:09 CET" name="Delete_Area" finished-at="2023-04-17T02:43:09 CET" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editArea -->
-        <test-method signature="secondArea()[pri:0, instance:tests.Offline_Control_Mode@790174f2]" started-at="2023-04-16T09:13:17 CET" name="secondArea" finished-at="2023-04-16T09:13:23 CET" duration-ms="6191" status="PASS">
+        </test-method> <!-- Delete_Area -->
+        <test-method signature="secondArea()[pri:0, instance:tests.Offline_Control_Mode@1a2e2935]" started-at="2023-04-17T02:43:09 CET" name="secondArea" finished-at="2023-04-17T02:43:25 CET" duration-ms="16341" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- secondArea -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.Offline_Control_Mode@790174f2]" started-at="2023-04-16T09:13:23 CET" name="tearDown" finished-at="2023-04-16T09:13:25 CET" duration-ms="1150" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.Offline_Control_Mode@1a2e2935]" started-at="2023-04-17T02:43:25 CET" name="tearDown" finished-at="2023-04-17T02:43:26 CET" duration-ms="932" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="reportTearDown()[pri:0, instance:tests.Offline_Control_Mode@790174f2]" started-at="2023-04-16T09:13:25 CET" name="reportTearDown" finished-at="2023-04-16T09:13:26 CET" duration-ms="1326" status="PASS">
+        <test-method is-config="true" signature="reportTearDown()[pri:0, instance:tests.Offline_Control_Mode@1a2e2935]" started-at="2023-04-17T02:43:26 CET" name="reportTearDown" finished-at="2023-04-17T02:43:28 CET" duration-ms="1240" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTearDown -->

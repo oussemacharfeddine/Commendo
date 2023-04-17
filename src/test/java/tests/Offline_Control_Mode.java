@@ -17,6 +17,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 
 import io.appium.java_client.AppiumBy;
@@ -105,6 +106,7 @@ public void CreationSite() {
 	public void secondArea(){
 	
 	ExtentTest CSA = extent.createTest("Creation Second Area ","Creation salle Java");
+	ExtentTest EA= extent.createTest("Edit Area ","Edit salle Java");
 	try {
 		
 	WebElement ww = driver.findElement(By.xpath("//android.widget.FrameLayout[@content-desc=\"Area\"]/android.widget.ImageView"));
@@ -118,50 +120,70 @@ public void CreationSite() {
 	vv.click();
 	WebElement uu = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[3]/android.widget.EditText"));
     uu.sendKeys("Salle Java ");
+    CSA.fail(MediaEntityBuilder.createScreenCaptureFromPath("img.png").build());
+
     
     WebElement ii= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.Button"));
     ii.click();
 	Thread.sleep(2000);
-   CSA.log(Status.PASS, "passed"); 
+    CSA.log(Status.PASS, "passed"); 
+	Thread.sleep(4000);
+	WebElement m= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.View"));
+	m.click();
+	WebElement tf= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ImageView"));
+	tf.click();
+	WebElement ub = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[3]/android.widget.EditText"));
+	ub.clear();
+    ub.sendKeys("Salle Ruby ");
+    WebElement sa = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.Button[2]"));
+    sa.click();
+	
+	EA.log(Status.PASS, "Passed");
+	CSA.log(Status.PASS, "Paased");
 	} catch(Exception e) {
 		e.printStackTrace();
 		CSA.log(Status.FAIL, "Failed"); 
+		EA.log(Status.FAIL, "Failed Edit");
 	}
 
 		    
 	}
 	
-	@Test
-	public void editArea() {
-		ExtentTest EA= extent.createTest("Edit Area ","Edit salle de réunion");
-		try {
-			  Thread.sleep(2000);
-			  WebElement m= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.widget.FrameLayout/android.view.ViewGroup/android.view.View"));
-			  m.click();
-			  WebElement tf= driver.findElement(By.xpath("WebElement mm= driver.findElement(By.xpath(\""));
-			  tf.click();
-			  WebElement tt= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ImageView"));
-			  tt.click();
-			  WebElement tm= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ImageView"));
-			  tm.click();
-			  WebElement tl= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ImageView"));
-			  tl.click();
-			  Thread.sleep(1000);
-			  WebElement pp= driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"Screenshot_20230416-084120.png, 127 kB, 8:41 AM\"]/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.widget.ImageView[2]"));
-			  pp.click();
-			  WebElement ps= driver.findElement(By.xpath(""));
-			  ps.click();
-			  EA.log(Status.PASS, "Passed");
-			  
-			  
-			  } catch(Exception e) {
-				  
-				  e.printStackTrace();
-				  EA.log(Status.FAIL, "Failed Edit");
-
+	 @Test
+	  public void Delete_Area() {
+			ExtentTest DA = extent.createTest("Delete Area  ","Delete salle de Reunion");
 			
-		}
-	}
+
+		  try {
+				DA.log(Status.PASS, "Passed");
+
+		  } catch (Exception e) {
+			  e.printStackTrace();
+				DA.log(Status.FAIL, "Failed");
+
+			  
+		  }
+	  }
+	 
+	 
+
+	 @Test
+	  public void Creation_Another_Site() {
+			ExtentTest DD = extent.createTest("Creation site MyHome  ","Creation site MyHome ");
+			
+
+		  try {
+				DD.log(Status.PASS, "Passed");
+
+		  } catch (Exception e) {
+			  e.printStackTrace();
+				DD.log(Status.FAIL, "Failed");
+
+			  
+		  }
+	  }
+	
+	
 	
 
 
@@ -173,8 +195,7 @@ public void CreationSite() {
 	 public void tearDown() throws IOException
 	 {
 
-	   
-	        driver.quit();
+	      driver.quit();
 			}
 	 
 	

@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\hoove\AppData\Local\Temp\testng-eclipse-1696865677\testng-customsuite.xml</span>
+                    <span>C:\Users\hoove\AppData\Local\Temp\testng-eclipse-1939381885\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,12 +108,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="tests.Offline_Control_Mode" class="method navigator-link" hash-for-method="Creation_Another_Site">Creation_Another_Site</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="tests.Offline_Control_Mode" class="method navigator-link" hash-for-method="Creation_Area">Creation_Area</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.Offline_Control_Mode" class="method navigator-link" hash-for-method="editArea">editArea</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="tests.Offline_Control_Mode" class="method navigator-link" hash-for-method="Delete_Area">Delete_Area</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -153,6 +158,13 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="Creation_Another_Site">
+                  </a> <!-- Creation_Another_Site -->
+                  <span class="method-name">Creation_Another_Site</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="Creation_Area">
                   </a> <!-- Creation_Area -->
                   <span class="method-name">Creation_Area</span>
@@ -160,9 +172,9 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="editArea">
-                  </a> <!-- editArea -->
-                  <span class="method-name">editArea</span>
+                  <a name="Delete_Area">
+                  </a> <!-- Delete_Area -->
+                  <span class="method-name">Delete_Area</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -184,7 +196,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\hoove\AppData\Local\Temp\testng-eclipse-1696865677\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\hoove\AppData\Local\Temp\testng-eclipse-1939381885\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -233,32 +245,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'login')
 data.setCell(0, 2, 'tests.Offline_Control_Mode')
-data.setCell(0, 3, 24468);
+data.setCell(0, 3, 27803);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Creation_Area')
+data.setCell(1, 1, 'secondArea')
 data.setCell(1, 2, 'tests.Offline_Control_Mode')
-data.setCell(1, 3, 7158);
+data.setCell(1, 3, 16341);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'CreationSite')
+data.setCell(2, 1, 'Creation_Area')
 data.setCell(2, 2, 'tests.Offline_Control_Mode')
-data.setCell(2, 3, 6273);
+data.setCell(2, 3, 6642);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'secondArea')
+data.setCell(3, 1, 'CreationSite')
 data.setCell(3, 2, 'tests.Offline_Control_Mode')
-data.setCell(3, 3, 6191);
+data.setCell(3, 3, 5276);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'editArea')
+data.setCell(4, 1, 'Creation_Another_Site')
 data.setCell(4, 2, 'tests.Offline_Control_Mode')
-data.setCell(4, 3, 2078);
+data.setCell(4, 3, 2);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Delete_Area')
+data.setCell(5, 2, 'tests.Offline_Control_Mode')
+data.setCell(5, 3, 2);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 46 seconds</span>
+              <span class="suite-total-time">Total running time: 56 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -291,35 +307,39 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">736 ms</span>
+                <span class="method-start">873 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">18920 ms</span>
+                <span class="method-start">33250 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CreationSite</span>
-                <span class="method-start">43406 ms</span>
+                <span class="method-start">61065 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Creation_Another_Site</span>
+                <span class="method-start">66345 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Creation_Area</span>
-                <span class="method-start">49681 ms</span>
+                <span class="method-start">66349 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">editArea</span>
-                <span class="method-start">56844 ms</span>
+                <span class="method-name">Delete_Area</span>
+                <span class="method-start">72994 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">secondArea</span>
-                <span class="method-start">58924 ms</span>
+                <span class="method-start">72999 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">65119 ms</span>
+                <span class="method-start">89345 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">reportTearDown</span>
-                <span class="method-start">66397 ms</span>
+                <span class="method-start">90429 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
