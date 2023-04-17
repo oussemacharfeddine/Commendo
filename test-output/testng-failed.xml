@@ -6,10 +6,10 @@
       <class name="tests.Offline_Control_Mode">
         <methods>
           <include name="reportTearDown"/>
-          <include name="login"/>
           <include name="tearDown"/>
           <include name="setup"/>
           <include name="reportSetup"/>
+          <include name="secondArea"/>
         </methods>
       </class> <!-- tests.Offline_Control_Mode -->
     </classes>
