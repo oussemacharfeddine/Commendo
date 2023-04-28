@@ -37,9 +37,9 @@ public class Offline_Authentification extends ExtentReport{
 
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability(CapabilityType.PLATFORM_NAME, "ANDROID");
-        caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
-        caps.setCapability(MobileCapabilityType.DEVICE_NAME, "sdk_gphone64_x86");
-        caps.setCapability(MobileCapabilityType.UDID, "emulator-5554");
+        caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10");
+        caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Galaxy A11");
+        caps.setCapability(MobileCapabilityType.UDID, "R9JN90M9XXJ");
         caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
         caps.setCapability(MobileCapabilityType.APP, "C:\\Users\\hoove\\AppData\\Local\\Android\\Sdk\\platform-tools\\Commendo_APK_.apk");
   
@@ -62,7 +62,9 @@ public class Offline_Authentification extends ExtentReport{
 		// TODO Auto-generated catch block
 		ep.printStackTrace();
 	}  
-ExtentTest Auth = extent.createTest("login","Authentification en offline");
+ExtentTest Auth = extent.createTest("login");
+ExtentTest feature = Auth.createNode("feature");
+Auth.assignCategory("User Authentification");
 WebElement l = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[4]/android.widget.TextView[2]"));
 l.click();
 WebElement d = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.TextView[1]"));

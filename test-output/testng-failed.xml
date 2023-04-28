@@ -5,9 +5,17 @@
     <classes>
       <class name="tests.Offline_Control_Mode">
         <methods>
+          <include name="Delete_Area"/>
           <include name="reportTearDown"/>
+          <include name="editDevice"/>
+          <include name="add_Device"/>
+          <include name="login"/>
           <include name="tearDown"/>
+          <include name="getStatus"/>
           <include name="setup"/>
+          <include name="Creation_Area"/>
+          <include name="CreationSite"/>
+          <include name="Creation_Another_Site"/>
           <include name="reportSetup"/>
           <include name="secondArea"/>
         </methods>

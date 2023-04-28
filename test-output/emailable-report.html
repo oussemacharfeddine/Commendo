@@ -9,46 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">77 060</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">151 860</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.Offline_Control_Mode</td><td><a href="#m0">secondArea</a></td><td rowspan="1">1681699210768</td><td rowspan="1">5</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">tests.Offline_Control_Mode</td><td><a href="#m1">CreationSite</a></td><td rowspan="1">1681699196275</td><td rowspan="1">6594</td></tr><tr class="passedeven"><td><a href="#m2">Creation_Another_Site</a></td><td rowspan="1">1681699202871</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m3">Creation_Area</a></td><td rowspan="1">1681699202876</td><td rowspan="1">7882</td></tr><tr class="passedeven"><td><a href="#m4">Delete_Area</a></td><td rowspan="1">1681699210760</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m5">login</a></td><td rowspan="1">1681699169239</td><td rowspan="1">27029</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="9">tests.Offline_Control_Mode</td><td><a href="#m0">CreationSite</a></td><td rowspan="1">1682644262742</td><td rowspan="1">7376</td></tr><tr class="passedeven"><td><a href="#m1">Creation_Another_Site</a></td><td rowspan="1">1682644270120</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m2">Creation_Area</a></td><td rowspan="1">1682644270123</td><td rowspan="1">7840</td></tr><tr class="passedeven"><td><a href="#m3">Delete_Area</a></td><td rowspan="1">1682644277965</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m4">add_Device</a></td><td rowspan="1">1682644277972</td><td rowspan="1">83326</td></tr><tr class="passedeven"><td><a href="#m5">editDevice</a></td><td rowspan="1">1682644361301</td><td rowspan="1">574</td></tr><tr class="passedeven"><td><a href="#m6">getStatus</a></td><td rowspan="1">1682644361877</td><td rowspan="1">15103</td></tr><tr class="passedeven"><td><a href="#m7">login</a></td><td rowspan="1">1682644241407</td><td rowspan="1">21324</td></tr><tr class="passedeven"><td><a href="#m8">secondArea</a></td><td rowspan="1">1682644376985</td><td rowspan="1">85</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">tests.Offline_Control_Mode#secondArea</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;takesScreenshot&quot; is null
-	at tests.ExtentReport.captureScreenshot(ExtentReport.java:31)
-	at tests.Offline_Control_Mode.secondArea(Offline_Control_Mode.java:111)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.Offline_Control_Mode#CreationSite</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">tests.Offline_Control_Mode#Creation_Another_Site</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">tests.Offline_Control_Mode#Creation_Area</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">tests.Offline_Control_Mode#Delete_Area</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">tests.Offline_Control_Mode#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">tests.Offline_Control_Mode#CreationSite</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.Offline_Control_Mode#Creation_Another_Site</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.Offline_Control_Mode#Creation_Area</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.Offline_Control_Mode#Delete_Area</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.Offline_Control_Mode#add_Device</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.Offline_Control_Mode#editDevice</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">tests.Offline_Control_Mode#getStatus</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">tests.Offline_Control_Mode#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">tests.Offline_Control_Mode#secondArea</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
