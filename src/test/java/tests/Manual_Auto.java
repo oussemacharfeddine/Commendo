@@ -41,45 +41,7 @@ import ru.sbtqa.monte.screenrecorder.ScreenRecorder;
 
 public class Manual_Auto extends Offline_Control_Mode {
 
-
- @Test
-	 public void addAutomationScene() {
-		 ExtentTest AA = extent.createTest("Add automation scene");
-		 AA.assignCategory("Add/Edit__automated_scenarios");	
-		 
-		 try {
-			 
-			 WebElement Es = driver.findElement(By.xpath("//android.widget.FrameLayout[@content-desc=\"Accueil\"]/android.widget.ImageView"));	 
-			 Es.click();
-			 
-			 WebElement Ez = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/androidx.cardview.widget.CardView[2]/android.widget.RelativeLayout/android.widget.Button"));
-			 Ez.click();
-			 
-			 WebElement Et = driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"Automatisation\"]/android.widget.TextView"));
-			 Et.click();
-			 
-			 WebElement Er = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.Button"));
-			 Er.click();
-			 
-			 WebElement EI = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.EditText"));
-			 EI.click();
-			 EI.sendKeys("auto");
-			 
-			 
-			 
-			 
-			 
-			 
-			 
-			 
-			 
-			 
-			 
-			 
-		 } catch (Exception e) {
-			 
-			 
-		 }
-		 
-	 }
+    
+	
+			 	
 }

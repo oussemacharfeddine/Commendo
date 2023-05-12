@@ -3,6 +3,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
@@ -28,31 +29,7 @@ import io.appium.java_client.remote.MobileCapabilityType;
 
 
 public class Offline_Authentification extends ExtentReport{
-	public static AndroidDriver driver;
 	
-
-	
-    @BeforeTest
-    public void setup(){
-
-        DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setCapability(CapabilityType.PLATFORM_NAME, "ANDROID");
-        caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10");
-        caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Galaxy A11");
-        caps.setCapability(MobileCapabilityType.UDID, "R9JN90M9XXJ");
-        caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
-        caps.setCapability(MobileCapabilityType.APP, "C:\\Users\\hoove\\AppData\\Local\\Android\\Sdk\\platform-tools\\Commendo_APK_.apk");
-  
-      
-        try {
-            driver = new AndroidDriver (new URL("http://127.0.0.1:4723/wd/hub"), caps);
-                 } catch (MalformedURLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        
-
-        }
     
     @Test
     public void login(){
@@ -61,10 +38,11 @@ public class Offline_Authentification extends ExtentReport{
 	} catch (InterruptedException ep) {
 		// TODO Auto-generated catch block
 		ep.printStackTrace();
+	
 	}  
+	
 ExtentTest Auth = extent.createTest("login");
-ExtentTest feature = Auth.createNode("feature");
-Auth.assignCategory("User Authentification");
+Auth.assignCategory("User_Authentification");
 WebElement l = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[4]/android.widget.TextView[2]"));
 l.click();
 WebElement d = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.TextView[1]"));
@@ -76,7 +54,7 @@ e.click();
 WebElement j = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.TextView[1]"));
 j.click();
 
-WebElement h = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ImageView"));
+WebElement h = driver.findElement(By.id("com.sofia.commendo:id/close_on_boarding"));
 h.click();
 
 
@@ -90,8 +68,6 @@ u.click();
 WebElement w = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.FrameLayout/android.widget.EditText"));
 w.click();
 w.sendKeys("11111");
-
-
 WebElement x = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.ImageView"));
  x.click();
  

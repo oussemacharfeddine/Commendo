@@ -44,10 +44,20 @@ public class ExtentReport {
 
 	
 @BeforeSuite
-public void reportSetup(){
-	htmlReporter = new ExtentSparkReporter("extent.html");
+public void reportSetup() throws IOException{
+	htmlReporter = new ExtentSparkReporter("Rapport.html");
+	htmlReporter.config().setReportName("Commendo Release 0.11.0");
 	extent = new ExtentReports();
 	extent.attachReporter(htmlReporter);
+	extent.setSystemInfo("Device", "Samsung A11");
+	extent.setSystemInfo("Equipment device", "Device B6R4");
+	extent.setSystemInfo("OS", "Android");
+	extent.setSystemInfo("Author", "Charfeddine oussema");
+	extent.setSystemInfo("Product release", "Commendo V0.11.0");
+	extent.getStats();
+ 
+ 
+
 	
 	
 
