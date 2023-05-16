@@ -3,15 +3,24 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.Offline_Control_Mode">
+      <class name="tests.provisionningManagement">
         <methods>
+          <include name="reportSetup"/>
+          <include name="CreationSite"/>
+          <include name="setUp"/>
           <include name="reportTearDown"/>
           <include name="login"/>
           <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="reportSetup"/>
         </methods>
-      </class> <!-- tests.Offline_Control_Mode -->
+      </class> <!-- tests.provisionningManagement -->
+      <class name="tests.offline_Authentication">
+        <methods>
+          <include name="reportSetup"/>
+          <include name="setUp"/>
+          <include name="reportTearDown"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- tests.offline_Authentication -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

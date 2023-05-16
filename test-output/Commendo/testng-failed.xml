@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Commendo]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Commendo(failed)">
+    <classes>
+      <class name="tests.getStatus">
+        <methods>
+          <include name="reportSetup"/>
+          <include name="CreationSite"/>
+          <include name="addDevice"/>
+          <include name="Creation_Area"/>
+          <include name="reportTearDown"/>
+          <include name="login"/>
+          <include name="setUp"/>
+          <include name="getStatus"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.getStatus -->
+      <class name="tests.remFavourite">
+        <methods>
+          <include name="reportSetup"/>
+          <include name="removeFav"/>
+          <include name="CreationSite"/>
+          <include name="editDeviceName"/>
+          <include name="addDevice"/>
+          <include name="addFav"/>
+          <include name="login"/>
+          <include name="Creation_Area"/>
+          <include name="reportTearDown"/>
+          <include name="setUp"/>
+          <include name="getStatus"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.remFavourite -->
+      <class name="tests.editdeviceName">
+        <methods>
+          <include name="reportSetup"/>
+          <include name="CreationSite"/>
+          <include name="editDeviceName"/>
+          <include name="addDevice"/>
+          <include name="reportTearDown"/>
+          <include name="login"/>
+          <include name="Creation_Area"/>
+          <include name="setUp"/>
+          <include name="getStatus"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.editdeviceName -->
+      <class name="tests.provisionningManagement">
+        <methods>
+          <include name="reportSetup"/>
+          <include name="CreationSite"/>
+          <include name="Creation_Area"/>
+          <include name="login"/>
+          <include name="reportTearDown"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.provisionningManagement -->
+      <class name="tests.addFavourite">
+        <methods>
+          <include name="reportSetup"/>
+          <include name="editDeviceName"/>
+          <include name="CreationSite"/>
+          <include name="addDevice"/>
+          <include name="addFav"/>
+          <include name="reportTearDown"/>
+          <include name="login"/>
+          <include name="Creation_Area"/>
+          <include name="setUp"/>
+          <include name="getStatus"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.addFavourite -->
+      <class name="tests.automationScenes">
+        <methods>
+          <include name="reportSetup"/>
+          <include name="addAutomationOnce"/>
+          <include name="removeFav"/>
+          <include name="editDeviceName"/>
+          <include name="CreationSite"/>
+          <include name="addDevice"/>
+          <include name="addFav"/>
+          <include name="tearDown"/>
+          <include name="Creation_Area"/>
+          <include name="reportTearDown"/>
+          <include name="login"/>
+          <include name="setUp"/>
+          <include name="getStatus"/>
+        </methods>
+      </class> <!-- tests.automationScenes -->
+      <class name="tests.addDevice">
+        <methods>
+          <include name="reportSetup"/>
+          <include name="CreationSite"/>
+          <include name="addDevice"/>
+          <include name="login"/>
+          <include name="reportTearDown"/>
+          <include name="Creation_Area"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.addDevice -->
+      <class name="tests.editDeviceCategory">
+        <methods>
+          <include name="reportSetup"/>
+          <include name="CreationSite"/>
+          <include name="addDevice"/>
+          <include name="reportTearDown"/>
+          <include name="Creation_Area"/>
+          <include name="login"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.editDeviceCategory -->
+    </classes>
+  </test> <!-- Commendo(failed) -->
+</suite> <!-- Failed suite [Commendo] -->
